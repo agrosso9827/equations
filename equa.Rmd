@@ -1,0 +1,39 @@
+---
+title: "Equations exercise"
+output: html_notebook
+---
+
+This is the first line
+
+```{r}
+a <- readline(prompt="Enter a number: ")
+b<- readline(prompt="Enter a number: ")
+c<- readline(prompt="Enter a number: ")
+a=as.numeric(a)
+b=as.numeric(b)
+c=as.numeric(c)
+if (a!=0){
+  d=b^2-4*a*c
+  if(d>0){
+    x1=(-b+sqrt(d))/(2*a)
+    x2=(-b-sqrt(d))/(2*a)
+  print(x1,x2)
+  }else if(d==0){
+    x0=(-b)/(2*a)
+    x0
+  }else{
+    print("impossible")
+  }
+}else{
+  if(b!=0){
+    x=-c/b
+    x
+  }else if(b==0 && c==0){
+    print("undefined")
+  }else{
+    print("impossible")
+  }
+}
+
+
+```
