@@ -3,7 +3,7 @@ title: "Equations exercise"
 output: html_notebook
 ---
 
-This is the first line
+This is the first line with changes
 
 ```{r}
 a <- readline(prompt="Enter a number: ")
